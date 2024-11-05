@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:title="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <!--User name edit text-->
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="আপনার নাম"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
+
+            <!--Partner name edit text-->
+
+            <EditText
+                android:id="@+id/partnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edittext_background"
+                android:hint="সঙ্গীর নাম"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
+
+            <!--Radio Group Button Layout-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="বন্ধু" />
+
+                    <RadioButton
+                        android:id="@+id/love"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="প্রেম" />
+
+                    <RadioButton
+                        android:id="@+id/family"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="পরিবার" />
+
+                    <RadioButton
+                        android:id="@+id/crush"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ক্রাশ" />
+
+                    <RadioButton
+                        android:id="@+id/soulmate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="সোলমেট" />
+
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/best_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="সেরা বন্ধু" />
+
+                    <RadioButton
+                        android:id="@+id/partner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="সঙ্গী" />
+
+                    <RadioButton
+                        android:id="@+id/ex_partner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="প্রাক্তন সঙ্গী" />
+
+                    <RadioButton
+                        android:id="@+id/childhood_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="শৈশবের বন্ধু" />
+
+                    <RadioButton
+                        android:id="@+id/favorite_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="প্রিয় মানুষ" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!--Calculate button-->
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary"
+                android:padding="10dp"
+                android:text="প্রেমের পরিমাণ নির্ণয় করুন"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

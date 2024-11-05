@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="আপনার নাম: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/partnerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="সঙ্গীর নাম: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/relationTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="সম্পর্কের ধরন: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/compatibilityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="সম্পর্কের অবস্থা: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tipsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="সম্পর্ক উন্নত করার টিপস: "
+        android:textSize="18sp" />
+
+</LinearLayout>
